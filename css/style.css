@@ -820,7 +820,7 @@ body._lock {
 }
 .tab__body {
 	position: relative;
-	min-height: 1000px;
+	min-height: 2000px;
 	padding: 10px 0;
 }
 .tab__slide {
@@ -1011,3 +1011,111 @@ body._lock {
 	align-self: center;
 	text-align: left;
 }
+/*---MAIN-LESSONS----------*/
+.main-lessons {}
+.iGCSE-main-lessons {
+	padding: 42px 0 0 0;
+}
+.a-levels-main-lessons {}
+
+.lessons__header {}
+.iGCSE-main-lessons__header {
+	position: relative;
+	text-align: left;
+	padding: 0 0 0 62px;
+
+}
+.iGCSE-main-lessons__header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+	background: #E0EEF9 url("../img/program/iGCSE/lessons/main-lessons/plus.svg") center no-repeat;
+	border-radius: 3px;
+}
+.a-levels-main-lessons__header {}
+
+.iGCSE-main-lessons__label {
+	margin: 0 auto;
+	max-width: 708px;
+}
+.iGCSE-main-lessons__label:not(:first-child) {
+	margin: 60px auto 0;
+}
+.iGCSE-main-lessons__title {
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 177%;
+	text-transform: uppercase;
+	color: #0EBED9;
+}
+.iGCSE-main-lessons__subtitle {
+	font-size: 18px;
+	line-height: 167%;
+}
+
+.iGCSE-main-lessons__list {
+	margin: 32px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.iGCSE-main-lessons__item {
+	flex: 0 1 33.3333%;
+	padding: 34px 0 50px;
+	border: 1px solid #DDE2EE;
+	border-radius: 15px;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.iGCSE-main-lessons__item:nth-child(1) {
+	margin: 0 15px 15px 0;
+}
+.iGCSE-main-lessons__item:nth-child(2) {
+	margin: 0 15px 15px 15px;
+}
+.iGCSE-main-lessons__item:nth-child(3) {
+	margin: 0 0 15px 15px;
+}
+.iGCSE-main-lessons__item:nth-child(6) {
+	margin: 0 0 0 15px;
+}
+
+.iGCSE-main-lessons__item:not(:last-child) {
+	/*margin: 0 15px;*/
+}
+
+.iGCSE-main-lessons__icon {
+	width: 100px;
+	height: 100px;
+}
+.iGCSE-main-lessons__icon img {
+	width: 100%;
+	height: 100%;
+}
+.iGCSE-main-lessons__icon:not(:last-child) {
+	margin: 0 0 19px 0;
+}
+.iGCSE-main-lessons__name {
+	font-size: 20px;
+	line-height: 100%;
+	font-weight: 900;
+	color: #0EBED9;
+	text-transform: uppercase;
+}
+.iGCSE-main-lessons__name:not(:last-child) {
+	margin: 0 0 12px 0;
+}
+.iGCSE-main-lessons__content {
+	line-height: 175%;
+}
+
+
+
+
