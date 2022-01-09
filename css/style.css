@@ -965,6 +965,7 @@ body._lock {
 	line-height: 150%;
 	font-weight: 700;
 }
+
 .iGCSE-lessons__list {
 	position: relative;
 	display: flex;
@@ -1058,33 +1059,20 @@ body._lock {
 
 .iGCSE-main-lessons__list {
 	margin: 32px 0 0 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: block;
 }
 .iGCSE-main-lessons__item {
-	flex: 0 1 33.3333%;
+	/*flex: 0 1 33.3333%;*/
 	padding: 34px 0 50px;
 	border: 1px solid #DDE2EE;
 	border-radius: 15px;
-	min-height: 250px;
+	/*min-height: 250px;*/
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-}
-.iGCSE-main-lessons__item:nth-child(1) {
-	margin: 0 15px 15px 0;
-}
-.iGCSE-main-lessons__item:nth-child(2) {
-	margin: 0 15px 15px 15px;
-}
-.iGCSE-main-lessons__item:nth-child(3) {
-	margin: 0 0 15px 15px;
-}
-.iGCSE-main-lessons__item:nth-child(6) {
-	margin: 0 0 0 15px;
 }
 
 .iGCSE-main-lessons__item:not(:last-child) {
@@ -1115,7 +1103,94 @@ body._lock {
 .iGCSE-main-lessons__content {
 	line-height: 175%;
 }
+@media(min-width: 769px) {
+	.iGCSE-main-lessons__list {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 250px 250px 250px;
+		gap: 30px;
+		margin: 32px 0;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+}
+@media(min-width: 1216px) {
+	.iGCSE-main-lessons__list {
+		display: grid;
+		grid-template-columns: 374px 374px 374px;
+		grid-template-rows: 250px 250px;
+		gap: 30px;
+	}
+}
+/*---a-levels---*/
+.a-levels-main-lessons__list {
+	margin: 32px 0 0 0;
+	display: block;
+}
+.a-levels-main-lessons__item {
+	/*flex: 0 1 33.3333%;*/
+	padding: 34px 0 50px;
+	border: 1px solid #DDE2EE;
+	border-radius: 15px;
+	/*min-height: 250px;*/
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
 
+.a-levels-main-lessons__item:not(:last-child) {
+	/*margin: 0 15px;*/
+}
+
+.a-levels-main-lessons__icon {
+	width: 100px;
+	height: 100px;
+}
+.a-levels-main-lessons__icon img {
+	width: 100%;
+	height: 100%;
+}
+.a-levels-main-lessons__icon:not(:last-child) {
+	margin: 0 0 19px 0;
+}
+.a-levels-main-lessons__name {
+	font-size: 20px;
+	line-height: 100%;
+	font-weight: 900;
+	color: #0EBED9;
+	text-transform: uppercase;
+}
+.a-levels-main-lessons__name:not(:last-child) {
+	margin: 0 0 12px 0;
+}
+.a-levels-main-lessons__content {
+	line-height: 175%;
+}
+.a-levels-main-lessons__content-list {
+
+}
+
+@media(min-width: 769px) {
+	.a-levels-main-lessons__list {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 250px 250px 250px;
+		gap: 30px;
+		margin: 32px 0;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+}
+@media(min-width: 1216px) {
+	.a-levels-main-lessons__list {
+		display: grid;
+		grid-template-columns: 374px 374px 374px;
+		grid-template-rows: 250px 250px;
+		gap: 30px;
+	}
+}
 
 
